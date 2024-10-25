@@ -36,9 +36,16 @@ namespace JUTPS
         public string[] PhysicalDamageIgnoreTags = new string[] { "Player", "Enemy", "Bones", "Wall", "Bullet" };
 
 
+        private QuickHackController quickHackController;
+
+        private void Start()
+{
+            quickHackController = FindAnyObjectByType<QuickHackController>();
+        }
+
         void FixedUpdate()
         {
-            Debug.Log("VelocityMultiplier: " + VelocityMultiplier);
+            // Debug.Log("VelocityMultiplier: " + VelocityMultiplier);
 
             if (IsDead == true || DisableAllMove == true || JUPauseGame.IsPaused) { return; }
             Movement();
@@ -93,10 +100,16 @@ namespace JUTPS
         {
             if (UseDefaultControllerInput == false) return;
 
+            // 퀵핵 UI가 활성화된 경우 ShotInput을 무시하지만, 나머지 입력은 그대로 허용
+            bool ShotInput = false;
+            bool ShotInputDown = false;
 
-            bool ShotInput = JUInput.GetButton(JUInput.Buttons.ShotButton);
-            //bool ShotInputUp = JUInput.GetButtonUp(JUInput.Buttons.ShotButton);
-            bool ShotInputDown = JUInput.GetButtonDown(JUInput.Buttons.ShotButton);
+            if (quickHackController == null || !quickHackController.IsQuickHackUIActive)
+            {
+                // 퀵핵 UI가 활성화되지 않은 경우에만 공격 입력을 허용
+                ShotInput = JUInput.GetButton(JUInput.Buttons.ShotButton);
+                ShotInputDown = JUInput.GetButtonDown(JUInput.Buttons.ShotButton);
+            }
             //bool PunchInputDown = EnablePunchAttacks ? JUInput.GetButtonDown(JUInput.Buttons.PunchButton) : false;
             bool ReloadInput = JUInput.GetButtonDown(JUInput.Buttons.ReloadButton);
             bool AimInput = JUInput.GetButton(JUInput.Buttons.AimingButton);

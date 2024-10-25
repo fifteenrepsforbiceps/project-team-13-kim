@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hackName: Short Circuit
   ramCost: 3
-  damage: 5
+  damage: 15
   duration: 3
   uploadTime: 1
-  description: Short Circuit Description
+  description: 'Hack Name: Short Circuit
+
+    RAM Cost: 3
+
+    Damage: 15
+
+    Duration:
+    3 seconds
+
+    Upload Time: 1 seconds'

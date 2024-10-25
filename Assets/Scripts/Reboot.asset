@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Reboot
   m_EditorClassIdentifier: 
   hackName: Reboot
-  ramCost: 7
-  damage: 3
+  ramCost: 2
+  damage: 5
   duration: 5
   uploadTime: 2
-  description: Reboot Description
+  description: 'Hack Name: Reboot
+
+    RAM Cost: 2
+
+    Damage: 5
+
+    Duration:
+    5 seconds
+
+    Upload Time: 2 seconds'

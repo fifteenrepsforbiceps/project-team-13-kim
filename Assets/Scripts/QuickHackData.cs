@@ -11,6 +11,20 @@ public class QuickHackData : ScriptableObject
     public float uploadTime;          // 퀵핵 업로드 시간
     [TextArea]
     public string description;        // 퀵핵의 설명
+
+    private void OnValidate()
+    {
+        UpdateDescription();
+    }
+
+    public void UpdateDescription()
+    {
+        description = $"Hack Name: {hackName}\n" +
+                    $"RAM Cost: {ramCost}\n" +
+                    $"Damage: {damage}\n" +
+                    $"Duration: {duration} seconds\n" +
+                    $"Upload Time: {uploadTime} seconds";
+    }
 }
 
 /*
