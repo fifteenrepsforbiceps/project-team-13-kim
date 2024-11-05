@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d0c69bf9de10b74188c585bb7926f12, type: 3}
-  m_Name: ShortCircuit
+  m_Name: Overheat
   m_EditorClassIdentifier: 
-  hackName: Short Circuit
-  ramCost: 3
-  damage: 50
-  duration: 3
-  uploadTime: 1
-  description: 'Hack Name: Short Circuit
+  hackName: Overheat
+  ramCost: 5
+  damage: 60
+  duration: 5
+  uploadTime: 1.5
+  description: 'Hack Name: Overheat
 
-    RAM Cost: 3
+    RAM Cost: 5
 
-    Damage: 50
+    Damage: 60
 
     Duration:
-    3 seconds
+    5 seconds
 
-    Upload Time: 1 seconds'
-  hackIcon: {fileID: 21300000, guid: eca27c473f634914981384d0456b32a4, type: 3}
+    Upload Time: 1.5 seconds'
+  hackIcon: {fileID: 21300000, guid: d06eb0279b1dadb468be89df2a20d2db, type: 3}
