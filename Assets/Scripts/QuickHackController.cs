@@ -185,8 +185,8 @@ public class QuickHackController : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 if (hit.collider.CompareTag("Enemy"))
-                    {
-                        HackUploadUI enemyHackUI = hit.collider.GetComponent<HackUploadUI>();
+                {
+                    HackUploadUI enemyHackUI = hit.collider.GetComponent<HackUploadUI>();
                     if (enemyHackUI != null)
                     {
                         enemyHackUI.StartUpload(selectedHack.uploadTime);
@@ -195,11 +195,10 @@ public class QuickHackController : MonoBehaviour
                     JUHealth enemyHealth = hit.collider.GetComponent<JUHealth>();
                     if (enemyHealth != null)
                     {
-                        StartCoroutine(DealDamageAfterUpload(enemyHealth, selectedHack));
+                        StartCoroutine(DealDamageOverTime(enemyHealth, selectedHack));
                     }
                 }
             }
-
 
             // RAM이 소모되었을 때만 리젠 코루틴 시작
             if (ramRestoreCoroutine == null)
@@ -537,5 +536,21 @@ public class QuickHackController : MonoBehaviour
         yield return new WaitForSeconds(hackData.uploadTime);
         enemyHealth.DoDamage(hackData.damage);
         Debug.Log($"적에게 {hackData.damage} 만큼의 피해를 주었습니다.");
+    }
+
+    private IEnumerator DealDamageOverTime(JUHealth enemyHealth, QuickHackData hackData)
+    {
+        float elapsedTime = 0f;
+        float tickInterval = Time.fixedDeltaTime; // FixedUpdate와 동일한 간격으로 틱 설정 (일반적으로 0.02초)
+        float damagePerTick = hackData.damage / (hackData.duration / tickInterval); // 틱당 데미지 계산
+
+        while (elapsedTime < hackData.duration)
+        {
+            enemyHealth.DoDamage(damagePerTick); // 적에게 틱당 데미지 적용
+            elapsedTime += tickInterval;
+            yield return new WaitForSeconds(tickInterval); // 매 틱 간격마다 대기
+        }
+
+        Debug.Log($"적에게 총 {hackData.damage} 만큼의 피해를 {hackData.duration}초 동안 가했습니다.");
     }
 }

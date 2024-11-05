@@ -82,9 +82,9 @@ namespace JUTPS.UI
         {
             if (healthComponent == null || healthBarImage == null) return;
 
-            // Update health bar fill amount
+            // Update health bar fill amount immediately without smooth transition
             float healthValueNormalized = healthComponent.Health / healthComponent.MaxHealth;
-            healthBarImage.fillAmount = Mathf.MoveTowards(healthBarImage.fillAmount, healthValueNormalized, speed * Time.deltaTime);
+            healthBarImage.fillAmount = healthValueNormalized;
 
             // Update health bar color based on health
             healthBarImage.color = Color.Lerp(emptyHPColor, fullHPColor, healthBarImage.fillAmount);
