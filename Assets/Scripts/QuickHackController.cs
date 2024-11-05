@@ -15,6 +15,7 @@ public class QuickHackController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ramText; // 사이버덱 램 표시를 위한 UI 텍스트
     [SerializeField] private TextMeshProUGUI hackDescription; // 선택된 퀵핵의 설명 표시
     [SerializeField] private GameObject ramSquarePrefab; // 네모칸 이미지 프리팹
+    [SerializeField] private GameObject ramUsedPrefab; // 소모된 램을 나타낼 새로운 프리팹
     [SerializeField] private Transform ramContainer; // 램 네모칸들을 배치할 부모 오브젝트
     private Image[] ramSquares; // 개별 램 네모칸 이미지 배열
 
@@ -34,11 +35,10 @@ public class QuickHackController : MonoBehaviour
     private Color targetColor;
 
     private bool isQuickHackUIActive = false;
-    private int maxRam = 50; // 최대 사이버덱 램
+    private int maxRam = 30; // 최대 사이버덱 램
     private int currentRam; // 현재 사이버덱 램
     private int selectedHackIndex = 0; // 현재 선택된 퀵핵 인덱스
     private Coroutine ramRestoreCoroutine = null;
-
 
     [SerializeField] private bool enemyDetectionGUI = false; // 인스펙터에서 UI 활성화 여부를 조절할 수 있도록 합니다.
 
@@ -59,11 +59,11 @@ public class QuickHackController : MonoBehaviour
             GameObject square = Instantiate(ramSquarePrefab, ramContainer);
             ramSquares[i] = square.GetComponent<Image>();
 
-            // 네모칸의 위치 설정 (각 칸을 x축으로 15씩 띄워서 배치)
+            // 네모칸의 위치 설정 (각 칸을 x축으로 25씩 띄워서 배치)
             RectTransform rectTransform = square.GetComponent<RectTransform>();
             if (rectTransform != null)
             {
-                rectTransform.anchoredPosition = new Vector2(15 * i, 0); // X축으로 15씩 이동, Y는 그대로
+                rectTransform.anchoredPosition = new Vector2(25 * i, 0); // X축으로 25씩 이동, Y는 그대로
             }
         }
 
@@ -78,14 +78,10 @@ public class QuickHackController : MonoBehaviour
         targetScale = new Vector3(0.5f, 0.5f, 0.5f);
         targetColor = Color.red;
 
-
         // 시간 관련 초기화
         currentTimeScale = 1f;
         Time.timeScale = 1f;
-
     }
-
-
 
     private void Update()
     {
@@ -149,7 +145,6 @@ public class QuickHackController : MonoBehaviour
         }
     }
 
-
     private void HandleQuickHackSelection()
     {
         // JUInput 사용하여 마우스 휠 입력 처리
@@ -189,7 +184,11 @@ public class QuickHackController : MonoBehaviour
                     HackUploadUI enemyHackUI = hit.collider.GetComponent<HackUploadUI>();
                     if (enemyHackUI != null)
                     {
-                        enemyHackUI.StartUpload(selectedHack.uploadTime);
+                        // 여기서 QuickHackData를 할당합니다.
+                        enemyHackUI.quickHackData = selectedHack;
+
+                        // 업로드 시작
+                        enemyHackUI.StartUpload(selectedHack.uploadTime, selectedHack.duration);
                     }
 
                     JUHealth enemyHealth = hit.collider.GetComponent<JUHealth>();
@@ -211,7 +210,6 @@ public class QuickHackController : MonoBehaviour
             Debug.Log("램이 부족합니다.");
         }
     }
-
 
     private void UpdateHackSelection()
     {
@@ -235,20 +233,24 @@ public class QuickHackController : MonoBehaviour
             }
         }
 
-        // 선택된 퀵핵의 램 소모량을 오른쪽부터 아웃라인으로 강조 표시
+        // 선택된 퀵핵의 램 소모량을 오른쪽부터 LightImage로 강조 표시
         int ramCost = selectedHack.ramCost;
         for (int i = 0; i < maxRam; i++)
         {
-            var outline = ramSquares[i].GetComponent<Outline>();
-            if (outline != null)
+            // 기존의 Outline 부분을 LightImage 활성화 방식으로 변경
+            Transform lightImageTransform = ramSquares[i].transform.Find("Ram-without-outline/LightImage");
+            if (lightImageTransform != null)
             {
+                GameObject lightImage = lightImageTransform.gameObject;
+
+                // 램 코스트 만큼의 LightImage를 활성화
                 if (i >= currentRam - ramCost && i < currentRam)
                 {
-                    outline.enabled = true; // 램 코스트 만큼의 네모칸 아웃라인 활성화
+                    lightImage.SetActive(true); // LightImage 활성화
                 }
                 else
                 {
-                    outline.enabled = false;
+                    lightImage.SetActive(false); // LightImage 비활성화
                 }
             }
         }
@@ -263,37 +265,63 @@ public class QuickHackController : MonoBehaviour
 
     private void UpdateRamDisplay()
     {
-        // 현재 선택된 퀵핵의 램 소모량
-        int ramCost = quickHacks[selectedHackIndex].ramCost;
-
         for (int i = 0; i < maxRam; i++)
         {
-            var outline = ramSquares[i].GetComponent<Outline>();
-            if (outline != null)
-            {
-                // 선택된 퀵핵의 예상 사용량 표시를 위한 아웃라인
-                outline.enabled = (i >= currentRam - ramCost && i < currentRam);
-            }
+            int reverseIndex = maxRam - 1 - i; // 오른쪽부터 인덱스를 얻기 위해 반전된 인덱스 사용
 
-            // RAM 상태 표시 업데이트
-            if (i < currentRam)
+            // 램이 소모된 경우, 기존 ramSquarePrefab을 ramUsedPrefab으로 변경
+            if (i >= currentRam)
             {
-                // 현재 색상이 회색이고 사용 가능한 상태로 바뀌는 경우에만 페이드 효과 적용
-                if (ramSquares[i].color == Color.gray)
+                if (ramSquares[i] == null || ramSquares[i].gameObject.name != ramUsedPrefab.name + "(Clone)") // 이미 사용된 상태가 아니라면
                 {
-                    StartCoroutine(FadeInSquare(ramSquares[i]));
-                }
-                else
-                {
-                    ramSquares[i].color = Color.white;
+                    // 기존 램 네모칸 삭제
+                    if (ramSquares[i] != null)
+                    {
+                        Destroy(ramSquares[i].gameObject);
+                    }
+
+                    // 새로운 ramUsedPrefab 인스턴스 생성
+                    GameObject usedSquare = Instantiate(ramUsedPrefab, ramContainer);
+                    ramSquares[i] = usedSquare.GetComponent<Image>();
+
+                    // 위치 재설정
+                    RectTransform rectTransform = usedSquare.GetComponent<RectTransform>();
+                    if (rectTransform != null)
+                    {
+                        rectTransform.anchoredPosition = new Vector2(25 * i, 0); // 기존 위치 유지
+                    }
                 }
             }
+            // 램이 회복된 경우, 사용된 ramUsedPrefab을 ramSquarePrefab으로 변경
             else
             {
-                ramSquares[i].color = Color.gray;
+                if (ramSquares[i] == null || ramSquares[i].gameObject.name != ramSquarePrefab.name + "(Clone)") // 왼쪽부터 복구가 진행되어야 하므로 i번째 요소 확인
+                {
+                    // 기존 ramUsedPrefab 삭제
+                    if (ramSquares[i] != null)
+                    {
+                        Destroy(ramSquares[i].gameObject);
+                    }
+
+                    // 새로운 ramSquarePrefab 인스턴스 생성
+                    GameObject availableSquare = Instantiate(ramSquarePrefab, ramContainer);
+                    ramSquares[i] = availableSquare.GetComponent<Image>();
+
+                    // 위치 재설정
+                    RectTransform rectTransform = availableSquare.GetComponent<RectTransform>();
+                    if (rectTransform != null)
+                    {
+                        rectTransform.anchoredPosition = new Vector2(25 * i, 0); // 기존 위치 유지
+                    }
+                }
             }
         }
     }
+
+
+
+
+
 
     private IEnumerator FadeInSquare(Image square)
     {
@@ -311,7 +339,6 @@ public class QuickHackController : MonoBehaviour
 
         square.color = endColor;
     }
-
 
     private void InitializeHackSlots()
     {
@@ -353,7 +380,6 @@ public class QuickHackController : MonoBehaviour
         // RAM이 최대치에 도달하면 코루틴 참조 제거
         ramRestoreCoroutine = null;
     }
-
 
     private void CheckEnemyAim()
     {

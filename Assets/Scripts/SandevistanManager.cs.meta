@@ -1,2 +1,18 @@
 fileFormatVersion: 2
 guid: 2ad109812bcf4bf4180c4b88c251a2f7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sandevistanVolume: {instanceID: 0}
+  - sandevistanProfile: {fileID: 11400000, guid: 54ebde3dc0e68a6488cd18abc3e688d2,
+      type: 2}
+  - defaultProfile: {instanceID: 0}
+  - sandevistanMaterial: {fileID: 2100000, guid: 93d02a96d0cb0394cb1a83bc67efdb64,
+      type: 2}
+  - playerTransform: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

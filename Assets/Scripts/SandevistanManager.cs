@@ -17,14 +17,13 @@ public class SandevistanManager : MonoBehaviour
     public SkinnedMeshRenderer[] skinnedMeshRenderers;
     public float meshRefreshRate = 0.1f;
     public float meshDestroyDelay = 3f;
-    public Color[] trailColors;
+    public Gradient trailGradient;
     public float colorLerpTime = 0.5f;
-    
+
     private bool isActive = false;
     private List<GameObject> spawnedMeshes = new List<GameObject>();
     private float timeRemaining;
-    private int colorIndex = 0;
-    private float lerpProgress = 0f;
+    private float gradientTime = 0f;
     private Color currentColor;
 
     private void Awake()
@@ -43,7 +42,7 @@ public class SandevistanManager : MonoBehaviour
     {
         skinnedMeshRenderers = playerTransform.GetComponentsInChildren<SkinnedMeshRenderer>();
         timeRemaining = sandevistanDuration;
-        currentColor = trailColors[0];
+        currentColor = trailGradient.Evaluate(0f);
     }
 
     void Update()
@@ -70,9 +69,24 @@ public class SandevistanManager : MonoBehaviour
         if (sandevistanVolume != null && sandevistanProfile != null)
         {
             sandevistanVolume.profile = sandevistanProfile;
-            sandevistanVolume.weight = 1;
+            sandevistanVolume.weight = 0;
+
+            // 초기 1초 동안 청록색이 강하게 적용되도록 설정
+            float effectDuration = 1f;
+            float elapsedTime = 0f;
+
+            while (elapsedTime < effectDuration)
+            {
+                elapsedTime += Time.unscaledDeltaTime;
+                sandevistanVolume.weight = Mathf.Lerp(0, 1, elapsedTime / effectDuration);
+                yield return null;
+            }
+
+            // 이후 얕은 청록색 효과 유지
+            sandevistanVolume.weight = 0.5f;
         }
 
+        // 스킬 지속 시간 동안 처리
         while (timeRemaining > 0)
         {
             timeRemaining -= meshRefreshRate;
@@ -90,9 +104,21 @@ public class SandevistanManager : MonoBehaviour
         // Reset Effects
         if (sandevistanVolume != null && defaultProfile != null)
         {
+            // 효과를 원래대로 되돌리기
+            float fadeOutDuration = 1f;
+            float elapsedTime = 0f;
+
+            while (elapsedTime < fadeOutDuration)
+            {
+                elapsedTime += Time.unscaledDeltaTime;
+                sandevistanVolume.weight = Mathf.Lerp(0.5f, 0, elapsedTime / fadeOutDuration);
+                yield return null;
+            }
+
             sandevistanVolume.profile = defaultProfile;
             sandevistanVolume.weight = 0;
         }
+
         foreach (GameObject mesh in spawnedMeshes)
         {
             StartCoroutine(FadeOutAndDestroy(mesh, 1f));
@@ -118,16 +144,10 @@ public class SandevistanManager : MonoBehaviour
 
     private void LerpTrailColor()
     {
-        if (trailColors.Length == 0) return;
+        if (trailGradient == null) return;
 
-        lerpProgress += Time.deltaTime * colorLerpTime;
-        currentColor = Color.Lerp(currentColor, trailColors[colorIndex], lerpProgress);
-
-        if (lerpProgress >= 1f)
-        {
-            lerpProgress = 0f;
-            colorIndex = (colorIndex + 1) % trailColors.Length;
-        }
+        gradientTime += Time.deltaTime / colorLerpTime;
+        currentColor = trailGradient.Evaluate(gradientTime % 1f);
     }
 
     private IEnumerator DestroyMeshAfterDelay(GameObject mesh, float delay)
@@ -135,7 +155,6 @@ public class SandevistanManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         StartCoroutine(FadeOutAndDestroy(mesh, 1f));
     }
-
 
     private IEnumerator FadeOutAndDestroy(GameObject mesh, float fadeDuration)
     {
