@@ -5,7 +5,9 @@ using System.Collections; // IEnumerator를 사용하기 위해 추가
 public class HackUploadUI : MonoBehaviour
 {
     [SerializeField] private GameObject hackUploadUIPrefab; // 퀵핵 UI 프리팹 (정사각형 모양)
-    [SerializeField] private Vector3 offset = new Vector3(0, 2.0f, 0); // 적의 위치에서 오프셋 (적 근처 적당한 거리)
+    [SerializeField] private Canvas canvas; // 캔버스를 명시적으로 할당
+    [SerializeField] private Transform hackUploadUIPosition; // UI의 위치를 지정할 Transform
+
     private Transform enemyTransform; // 적의 Transform 참조
     private Camera mainCamera;
     private GameObject hackUploadUIInstance; // 퀵핵 UI 인스턴스
@@ -23,10 +25,15 @@ public class HackUploadUI : MonoBehaviour
             Debug.LogError("메인 카메라를 찾을 수 없습니다. 카메라 태그를 확인하세요.");
         }
 
+        // 캔버스 확인
+        if (canvas == null)
+        {
+            Debug.LogError("캔버스가 할당되지 않았습니다. 캔버스를 할당해 주세요.");
+            return;
+        }
+
         // 퀵핵 UI 인스턴스 생성 및 초기 비활성화
-        hackUploadUIInstance = Instantiate(hackUploadUIPrefab);
-        hackUploadUIInstance.transform.SetParent(enemyTransform); // 적을 부모로 설정하여 적의 움직임에 따라 이동
-        hackUploadUIInstance.transform.localPosition = offset; // 적의 머리 위에 위치하도록 설정
+        hackUploadUIInstance = Instantiate(hackUploadUIPrefab, canvas.transform); // 캔버스를 부모로 설정하여 UI를 월드 스페이스로 나타냄
         hackUploadUIInstance.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f); // 크기 조정
         hackUploadUIInstance.SetActive(false);
 
@@ -45,14 +52,16 @@ public class HackUploadUI : MonoBehaviour
 
     private void Update()
     {
-        if (enemyTransform != null && hackUploadUIInstance.activeSelf)
+        if (hackUploadUIPosition != null && hackUploadUIInstance.activeSelf)
         {
             // UI가 항상 카메라를 향하도록 회전 설정
             if (mainCamera != null)
             {
-                Vector3 direction = mainCamera.transform.position - hackUploadUIInstance.transform.position;
-                direction.y = 0; // Y축 회전을 없애서 UI가 카메라와 평행하게 보이도록 함
-                hackUploadUIInstance.transform.rotation = Quaternion.LookRotation(-direction);
+                Vector3 screenPosition = mainCamera.WorldToScreenPoint(hackUploadUIPosition.position);
+                if (screenPosition.z > 0)
+                {
+                    hackUploadUIInstance.transform.position = screenPosition;
+                }
             }
         }
     }

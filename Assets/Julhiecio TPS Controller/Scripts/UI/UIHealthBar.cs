@@ -8,7 +8,7 @@ namespace JUTPS.UI
 {
 
     [AddComponentMenu("JU TPS/UI/UI Health Bar")]
-    public class UIHealhBar : MonoBehaviour
+    public class UIHealthBar : MonoBehaviour
     {
         [Header("UI Health Bar Settings")]
         [SerializeField] private JUHealth HealthComponent;
