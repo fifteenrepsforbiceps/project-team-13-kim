@@ -13,12 +13,15 @@ public class SandevistanManager : MonoBehaviour
     public VolumeProfile sandevistanProfile;
     public VolumeProfile defaultProfile;
     public Material sandevistanMaterial;
-    public Transform playerTransform;
-    public SkinnedMeshRenderer[] skinnedMeshRenderers;
+    public List<Transform> playerTransforms;  // 여러 플레이어의 Transform을 담을 리스트
     public float meshRefreshRate = 0.1f;
     public float meshDestroyDelay = 3f;
     public Gradient trailGradient;
     public float colorLerpTime = 0.5f;
+    public AudioClip activationSound;
+    public AudioClip deactivationSound;
+    public AudioSource audioSource;
+    [Range(0f, 1f)] public float audioVolume = 1.0f;
 
     private bool isActive = false;
     private List<GameObject> spawnedMeshes = new List<GameObject>();
@@ -40,8 +43,6 @@ public class SandevistanManager : MonoBehaviour
 
     void Start()
     {
-        skinnedMeshRenderers = playerTransform.GetComponentsInChildren<SkinnedMeshRenderer>();
-        timeRemaining = sandevistanDuration;
         currentColor = trailGradient.Evaluate(0f);
     }
 
@@ -65,13 +66,18 @@ public class SandevistanManager : MonoBehaviour
         isActive = true;
         timeRemaining = sandevistanDuration;
 
+        // Play activation sound
+        if (audioSource != null && activationSound != null)
+        {
+            audioSource.PlayOneShot(activationSound, audioVolume);
+        }
+
         // Activate Post Processing and Visual Effects
         if (sandevistanVolume != null && sandevistanProfile != null)
         {
             sandevistanVolume.profile = sandevistanProfile;
             sandevistanVolume.weight = 0;
 
-            // 초기 1초 동안 청록색이 강하게 적용되도록 설정
             float effectDuration = 1f;
             float elapsedTime = 0f;
 
@@ -82,7 +88,6 @@ public class SandevistanManager : MonoBehaviour
                 yield return null;
             }
 
-            // 이후 얕은 청록색 효과 유지
             sandevistanVolume.weight = 0.5f;
         }
 
@@ -91,11 +96,21 @@ public class SandevistanManager : MonoBehaviour
         {
             timeRemaining -= meshRefreshRate;
 
-            foreach (SkinnedMeshRenderer smr in skinnedMeshRenderers)
+            if (timeRemaining <= 1.0f && audioSource != null && deactivationSound != null && !audioSource.isPlaying)
             {
-                GameObject meshCopy = CreateMeshCopy(smr);
-                spawnedMeshes.Add(meshCopy);
-                StartCoroutine(DestroyMeshAfterDelay(meshCopy, meshDestroyDelay));
+                audioSource.PlayOneShot(deactivationSound, audioVolume);
+            }
+
+            foreach (Transform playerTransform in playerTransforms)
+            {
+                SkinnedMeshRenderer[] skinnedMeshRenderers = playerTransform.GetComponentsInChildren<SkinnedMeshRenderer>();
+
+                foreach (SkinnedMeshRenderer smr in skinnedMeshRenderers)
+                {
+                    GameObject meshCopy = CreateMeshCopy(smr, playerTransform);
+                    spawnedMeshes.Add(meshCopy);
+                    StartCoroutine(DestroyMeshAfterDelay(meshCopy, meshDestroyDelay));
+                }
             }
 
             yield return new WaitForSeconds(meshRefreshRate);
@@ -104,7 +119,6 @@ public class SandevistanManager : MonoBehaviour
         // Reset Effects
         if (sandevistanVolume != null && defaultProfile != null)
         {
-            // 효과를 원래대로 되돌리기
             float fadeOutDuration = 1f;
             float elapsedTime = 0f;
 
@@ -128,7 +142,7 @@ public class SandevistanManager : MonoBehaviour
         isActive = false;
     }
 
-    private GameObject CreateMeshCopy(SkinnedMeshRenderer smr)
+    private GameObject CreateMeshCopy(SkinnedMeshRenderer smr, Transform playerTransform)
     {
         GameObject meshCopy = new GameObject("SandevistanMeshCopy");
         MeshRenderer meshRenderer = meshCopy.AddComponent<MeshRenderer>();

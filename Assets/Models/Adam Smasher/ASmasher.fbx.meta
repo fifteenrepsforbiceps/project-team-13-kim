@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 4888cb3c2ad81c44d8c8e3eb3e415a4c
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR
+    second: {fileID: 2100000, guid: 69d5c0aed2d0dfe4da46b7e8d1ffb437, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR FIBER
+    second: {fileID: 2100000, guid: 66b61cfafd239f541bebdeac9bad5cc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR FIBER CLEAR
+    second: {fileID: 2100000, guid: b2c86b9f88c6ccb47ae1c65c5cb28c33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR LINEN
+    second: {fileID: 2100000, guid: 5d6cb0371b2b87148934fbc66c164be5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR LINEN POCKET
+    second: {fileID: 2100000, guid: f74d40f35eec71047900d059046cfaa6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR LINEN SHOULDER
+    second: {fileID: 2100000, guid: 74a306a0a18fcfe478f7b8521ba340c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR METAL
+    second: {fileID: 2100000, guid: e037ca098f0a75b4da1886d7316bccda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR METAL CLEAR
+    second: {fileID: 2100000, guid: 58cc0151bfef16747adf6ccf63c885b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR PLASTIC DARKER
+    second: {fileID: 2100000, guid: 8625415f115b30a4782b02af8214de84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMOR RED
+    second: {fileID: 2100000, guid: 9ce500862e1b19542b2f67c3add3bca6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMS
+    second: {fileID: 2100000, guid: 7e3b8c0747b04914386faf79be9ec06b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMS BLACK
+    second: {fileID: 2100000, guid: 2d5781edb8e03cc4dbff66a177d8754b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMS CLEAR
+    second: {fileID: 2100000, guid: 7e3b17ca0bcac3844aad23cdf7ee5ee4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMS FIBER
+    second: {fileID: 2100000, guid: a58a2183f8ee19045b2e6bf7ae5143f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMS METAL
+    second: {fileID: 2100000, guid: b053456a73161154d817250fb7564c44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARMS SILVER
+    second: {fileID: 2100000, guid: 446b2bb8792f16d4797f1ce0097fd599, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FACE
+    second: {fileID: 2100000, guid: fcc6e6aae6a7e5e43a9de3f9543ce3f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GENERATOR
+    second: {fileID: 2100000, guid: 4fe8cb297eed0374f8af44eac29bffd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GENERATOR LIGHT
+    second: {fileID: 2100000, guid: 58f0f7ce2970e8744bb08b4fb62b2dda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRANADE BLACK
+    second: {fileID: 2100000, guid: ad11340686b8f894287c0b5f63bc8162, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRANADE PIN
+    second: {fileID: 2100000, guid: 3d1a1093312428b45af6994ca402f9c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRANADE SILVER
+    second: {fileID: 2100000, guid: 65c932b6284d6074495721877e94563a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HEAD  FIBER
+    second: {fileID: 2100000, guid: 9f75945d0f73824468c3938b85a263af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HEAD BLACK
+    second: {fileID: 2100000, guid: 2e7a683a12ad6ed4080e3d2493355ac5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HEAD RED DETAIL
+    second: {fileID: 2100000, guid: cfb9eb276db6b8e489fb776fa71cfc7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HOLSTER
+    second: {fileID: 2100000, guid: 4183b398b3107684bbfd2c11f4859181, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HOLSTER FIBER
+    second: {fileID: 2100000, guid: 43e786b1817705948834b7c396492afa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HOLSTER LINEN
+    second: {fileID: 2100000, guid: d676d48d95bc1fa4ea5c2e0d1cbb3801, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HOLSTER LINES
+    second: {fileID: 2100000, guid: e34b52481f96e7e43b0e7ad9c89b18e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head
+    second: {fileID: 2100000, guid: 486030222c6670d4bb3784f8e58efcce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head RED
+    second: {fileID: 2100000, guid: 15cc223d99d5133499bbc720d4760345, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KNIFE
+    second: {fileID: 2100000, guid: 50c928918f6ac534abd57d36d3321f97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KNIFE DETAIL
+    second: {fileID: 2100000, guid: 482a7574104b86043873204b29a60221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LAUNCHER
+    second: {fileID: 2100000, guid: a7fe9343f24cfbd41885e5de2e726f1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LAUNCHER TOP
+    second: {fileID: 2100000, guid: 270b946542393dc4da9f39abfa222c12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LEGS
+    second: {fileID: 2100000, guid: 20ae40520bb987d41bda416034d05f29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LEGS BLACK
+    second: {fileID: 2100000, guid: 5e0e005e538fb2a4eb7c5ccef794abc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LEGS FIBER
+    second: {fileID: 2100000, guid: 45f4c22f28f9e6b45b99159c930250b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LEGS PLASTIC
+    second: {fileID: 2100000, guid: 145a6ef1516035a489b099e71e5eb564, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LEGS RED
+    second: {fileID: 2100000, guid: aafa15df9647c6f4195674df926ad0be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LIGHTS
+    second: {fileID: 2100000, guid: 93f4b6a59c9389c439a58f049d97a03b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 733ed0a31af60004cbd0595753ae663c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCABBARD
+    second: {fileID: 2100000, guid: 43eeba90f8685b54cbb956316d220e03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TORSO
+    second: {fileID: 2100000, guid: 24cc27b401d4ccf40aca9b900702a111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TORSO FIBER
+    second: {fileID: 2100000, guid: 03e735ef860bc9e4080be61756f06aa9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TORSO RED
+    second: {fileID: 2100000, guid: e715fef999df2364ba5d354b9fac1d17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Torso black
+    second: {fileID: 2100000, guid: 187588d5c202c284f9e3757846a697af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WEAPONS
+    second: {fileID: 2100000, guid: 2c10c57d0df13a84d8063ead99c78398, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aRMOR PLASTIC
+    second: {fileID: 2100000, guid: 401ec12f905b3d7449e10100b5977c66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dECALS
+    second: {fileID: 2100000, guid: 129725a8396bb904aab07cb56a929669, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gENERATOR GRAY
+    second: {fileID: 2100000, guid: a8098be24d0b93b46942abd3859e31a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gRANADE
+    second: {fileID: 2100000, guid: 833cbaaa98d095a4ea63c70243c70e5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lAUNCHER ARM
+    second: {fileID: 2100000, guid: 6c7b770d47e2c4646bae2c4dfde08bbf, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: decals_arasaka_d01
+    second: {fileID: 2800000, guid: c0429551e705b5d4da9b353f2f08a1ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: decals_arasaka_n01
+    second: {fileID: 2800000, guid: 8d84f3f825233b24989ae8d83db79b26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: garment_decals_d01
+    second: {fileID: 2800000, guid: ba58dc03646a41d4baf89ebacc5ecb0f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: garment_decals_n01
+    second: {fileID: 2800000, guid: d4c6124d8c191824d8b97888a93e4365, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: i1_001_mm_slot__adam_smasher_knife_dec01_d01out
+    second: {fileID: 2800000, guid: 3494aff3393b3e54ea7d63ae4c5209e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: i1_001_mm_slot__adam_smasher_knife_dec01_n01out
+    second: {fileID: 2800000, guid: 7865d7680b57c4e4d95af7c69950a0ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: i1_001_mm_slot__adam_smasher_knife_n01out
+    second: {fileID: 2800000, guid: 12b4d2da333d80f43a1b5574f44ee1c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: i1_003_mm_slot__adam_smasher_holster_n01out
+    second: {fileID: 2800000, guid: f333a1b1eb403b34fb763492c7e71fc8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: layer_16
+    second: {fileID: 2800000, guid: 9a20c66e2ba1cd946a494f9280a3c212, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: layer_17
+    second: {fileID: 2800000, guid: 0edd82c75d4151f41b4ff7d79913fefa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: layer_18
+    second: {fileID: 2800000, guid: 4d90610a3615d504484f9238d804633e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: layer_19
+    second: {fileID: 2800000, guid: cc547171cc975f74295329c180806f03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: layer_2
+    second: {fileID: 2800000, guid: 3a7ff87c7e7df9b4c94308fb77ed2c4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: layer_6
+    second: {fileID: 2800000, guid: 8a1a958fb38eae4449fc0f009f87748f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: layer_8
+    second: {fileID: 2800000, guid: 3cc0c1a1439951945938d5e6bd20ce6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_generic_brushed_01_300_r
+    second: {fileID: 2800000, guid: f89383ffcde34034681fbcab86ec9415, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_001_mm_body__adam_smasher_n01out
+    second: {fileID: 2800000, guid: ac25794b5c5613344ae635c1d7d89357, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_002_mm_armor__adam_smasher_n01out
+    second: {fileID: 2800000, guid: 1356d4910e2aa174e93024903a3c7628, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_004_mm_arms__adam_smasher_n01out
+    second: {fileID: 2800000, guid: 7143c0acdac4f9a459bc58d0336196ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_005_mm_weapons__adam_smasher_n01out
+    second: {fileID: 2800000, guid: 0ae0248ab7956464d8276ad30b62eefe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_006_mm_launcher__adam_smasher_n01out
+    second: {fileID: 2800000, guid: 4f2e167267282e5469dd7c24d452d768, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_007_mm_launcher_adam_smasher_n01out
+    second: {fileID: 2800000, guid: b6fa4caa016b0d6489e38b4431af2ca7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_008_mm_head__adam_smasher_eyes_dec_e01out
+    second: {fileID: 2800000, guid: f1a7532bea2cda94588eaa9511c6bef0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_008_mm_head__adam_smasher_n01out
+    second: {fileID: 2800000, guid: 02630597c4af5f041bc343d9325da1fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_009_mm_face__adam_smasher_d01out
+    second: {fileID: 2800000, guid: d12d06f0b6082984f9ff716a87a93fb1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_009_mm_face__adam_smasher_decal_d01out
+    second: {fileID: 2800000, guid: 0ed963ea4b5e5754e82944b8b6bfd54b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_009_mm_face__adam_smasher_decal_n01out
+    second: {fileID: 2800000, guid: 57c90d93a896a9246b8ac7e325bbf782, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_009_mm_face__adam_smasher_n01out
+    second: {fileID: 2800000, guid: c5e223e3c1bbdd7459af93aae97403cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t0_020_mm_legs__adam_smasher_n01out
+    second: {fileID: 2800000, guid: facd4d030382a7c4d9a9e525805d7126, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

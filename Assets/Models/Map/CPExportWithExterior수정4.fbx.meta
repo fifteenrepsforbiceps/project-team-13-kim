@@ -1,0 +1,2117 @@
+fileFormatVersion: 2
+guid: 58772a9e20bf9b74ab8d609c954be9b7
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: e52ddb1430e11c64ca537a6386312ee1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LED_LIGHT
+    second: {fileID: 2100000, guid: 58ebfc6bf487e6644b7913516af4d3aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_0_S_1
+    second: {fileID: 2100000, guid: 718ad4ba68396d546ac36d37427a97d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_0_z_glass_clean
+    second: {fileID: 2100000, guid: a3fe8ee217cc1b140ab8b9ea8773df7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_1_D_1
+    second: {fileID: 2100000, guid: 250fdb005943d934bafba5ee73f6d3ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_1_D_int
+    second: {fileID: 2100000, guid: 9128532aa3e7e9c428d961ca470df91a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_1_K_1
+    second: {fileID: 2100000, guid: 9e7acb87838cd6645afc569c3c05df6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_2_glass_int_int
+    second: {fileID: 2100000, guid: 85993a23361547b48ab9946feaa44063, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_2_screen_int_int
+    second: {fileID: 2100000, guid: 454a7cfe7e5fbd1458ce9731a12ffa57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L_2_z_glass_clean
+    second: {fileID: 2100000, guid: 82a5bf7cbe722084c9f232a0aba222c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaterialTemplate
+    second: {fileID: 2100000, guid: 4d93756e421f0e742b0fec34c03246be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaterialTemplate.001
+    second: {fileID: 2100000, guid: eb4712b1fa698f84a8455765c7d9b252, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaterialTemplate.002
+    second: {fileID: 2100000, guid: f34039f3cd840ba4bacf220a93d3b8c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaterialTemplate.003
+    second: {fileID: 2100000, guid: 29d245cafc349534eb6661fc7dcca1e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaterialTemplate.004
+    second: {fileID: 2100000, guid: 35f7f79593364f941ac17acc89ce3a17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaterialTemplate.005
+    second: {fileID: 2100000, guid: 7c2a8211259fe7240a4cef56cb4ecb85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _decals_ent
+    second: {fileID: 2100000, guid: 9bda87ea01606ac45a0e62c5c3462b9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _stickers_device
+    second: {fileID: 2100000, guid: 11d97de3d211c1d4586914b57007da79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _vfx_decals
+    second: {fileID: 2100000, guid: bba4da1b837538346b10c6a834c1c45d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arasaka_decal
+    second: {fileID: 2100000, guid: c4c50a40c223eff49851a783046093d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arasaka_decal_d
+    second: {fileID: 2100000, guid: 40b77fa768b9fb343b21c1f390651fd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arasaka_multilayered
+    second: {fileID: 2100000, guid: 54505701754455140b066c0b17f230ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_marble
+    second: {fileID: 2100000, guid: 87a196cf3cf26cd4daba63ee57f41e67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue
+    second: {fileID: 2100000, guid: ee3c4e9bc8427934c9c41e1078aa9d7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camera_d_glass
+    second: {fileID: 2100000, guid: 728f37d353bd39740be8d76e16ce3d78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camera_d_glass.001
+    second: {fileID: 2100000, guid: da0097ee019ba1e47b4421b99ed93c78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camera_d_glass.002
+    second: {fileID: 2100000, guid: 3aac428505a2d074693e890bf3f52b21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camera_d_glass.003
+    second: {fileID: 2100000, guid: 06347b075496bd441b49e7822f9cac87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camera_d_glass.004
+    second: {fileID: 2100000, guid: 85ee8e38fbef3e44e8c7c8e24fec0aff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cloth_yellow
+    second: {fileID: 2100000, guid: a35899830dcd0a646b4d603771ce0324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corporate_sticker
+    second: {fileID: 2100000, guid: 74e1b882586eb914eaa1ef2324dd516b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corporate_stickers
+    second: {fileID: 2100000, guid: e42ce90e982036d45bb7458593c5fa6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_generic2
+    second: {fileID: 2100000, guid: dda7af0b42350fc4ea1af6d62e3fb91d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.114
+    second: {fileID: 2100000, guid: b6665c86efb033c4db0d17627897f142, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.115
+    second: {fileID: 2100000, guid: 285cd37ee08c94745bce94898aa3d745, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.116
+    second: {fileID: 2100000, guid: f29f5cb63f2d2a04a80f0d8f2e4a4e9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.117
+    second: {fileID: 2100000, guid: e826bd6cab1a43a45bbdb45e8de2f1d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.118
+    second: {fileID: 2100000, guid: 87cfab78b3a2f1948adb463dc4224acc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.119
+    second: {fileID: 2100000, guid: d8b415577559d3f4e99e06f106ac9cab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.120
+    second: {fileID: 2100000, guid: c35c94a5971d41041bd453fbe6a8f24a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.121
+    second: {fileID: 2100000, guid: c46a2666ec4db9e4a9344b06dc54747d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.122
+    second: {fileID: 2100000, guid: 483232a062c4fcb41bbd06971736a5e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.123
+    second: {fileID: 2100000, guid: 8eb66663f7ec39644b884f47189af6c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.124
+    second: {fileID: 2100000, guid: 4e0c4eec3312e1b44986bea0d55d9d7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.125
+    second: {fileID: 2100000, guid: 3291f5c592a1b5b43826bee8291f265b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.126
+    second: {fileID: 2100000, guid: 2c7f76f16d48ef0408921b56faf7d3a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.127
+    second: {fileID: 2100000, guid: 8ca3418904311884c8234714707221da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.128
+    second: {fileID: 2100000, guid: 6b72fcb498f606e42a5adf546b8da6da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.129
+    second: {fileID: 2100000, guid: ac9195613568f864bac945e57641ee02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.130
+    second: {fileID: 2100000, guid: fd8f60f8bfa867148a278d02d537acef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.131
+    second: {fileID: 2100000, guid: ec92f1a0faddbdd4d98fec651681bb8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.132
+    second: {fileID: 2100000, guid: b3c3833df0c81a743afb221573a5cfe8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.133
+    second: {fileID: 2100000, guid: f24a5c0f9b1ee9b44b96ed31913b7252, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.134
+    second: {fileID: 2100000, guid: 6f4579eaa43bddc419b704c914f21eca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.135
+    second: {fileID: 2100000, guid: c6a89e520514de8408cc0aeca8682fe4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.136
+    second: {fileID: 2100000, guid: c802820b54415304d81819ce4f770010, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.137
+    second: {fileID: 2100000, guid: 56aad7bb8daaf0249a11e8f0107ee967, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.138
+    second: {fileID: 2100000, guid: 4a0c1158523bba640a63b1e59ad73f28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.139
+    second: {fileID: 2100000, guid: d765c44d138e9e34eb46c24e7f803d78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.140
+    second: {fileID: 2100000, guid: c806260fad1dd9c489f2149170c3ec10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.141
+    second: {fileID: 2100000, guid: c5ad3568adeb5814688d5822fa1b4d6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.142
+    second: {fileID: 2100000, guid: 2fd852022933bda439fe5ca7e24faa69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.143
+    second: {fileID: 2100000, guid: 140bbcfe840048241bf20ff1fd17b405, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.144
+    second: {fileID: 2100000, guid: e95ffa157409b524ba34e685598e38d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.145
+    second: {fileID: 2100000, guid: 2873364871723494190a7ddc3ae82f8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.146
+    second: {fileID: 2100000, guid: 669f6aaa3369326439debffefe5ddaec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.147
+    second: {fileID: 2100000, guid: 78fd9745faa079a4b9929dfa0717b092, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.148
+    second: {fileID: 2100000, guid: 74b73d0daeef90346b59accbf57ca605, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.149
+    second: {fileID: 2100000, guid: 5dffb67b74fb18a488b0ef08e7fb0ef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.150
+    second: {fileID: 2100000, guid: 5e24dae2613b7c541a5122ccbe74adab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.151
+    second: {fileID: 2100000, guid: bd21fd76b5e9c6841b39b2a29f99a5f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.152
+    second: {fileID: 2100000, guid: 48eb4af6790066643a9e5c157a2c1f00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.153
+    second: {fileID: 2100000, guid: 7dbd7f5e98a1dbc498f239d3158d4197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.154
+    second: {fileID: 2100000, guid: 16fe0967dfcce9a4d97dd2cd0423db42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.155
+    second: {fileID: 2100000, guid: 79f6832b144763e4398303930d7a12f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.156
+    second: {fileID: 2100000, guid: b0e0dd30f58553849af0127bf4ef711e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.157
+    second: {fileID: 2100000, guid: a48887ad51070284d9012a5735114845, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.158
+    second: {fileID: 2100000, guid: 4502028dc6f781d4ab356aae17202569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.159
+    second: {fileID: 2100000, guid: 9c6e6c3ae9a1f544e822012385a0ce11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.160
+    second: {fileID: 2100000, guid: 55b6d437b4858284f8804301a1f3d2ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.161
+    second: {fileID: 2100000, guid: f163b6269fde07c40bdbe45104380f5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.162
+    second: {fileID: 2100000, guid: 4f93fe1b702437d4abc63c3b011ab060, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.163
+    second: {fileID: 2100000, guid: dbe46e2ddcc23f14baeab2bb227021d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.164
+    second: {fileID: 2100000, guid: a251a029f77e1a04c92dcd4e945342fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.165
+    second: {fileID: 2100000, guid: 64f26ac494b6e16478c6daab3887a4b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.166
+    second: {fileID: 2100000, guid: 46c9ecb210f5e7749bfa4bea98e2f458, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.167
+    second: {fileID: 2100000, guid: c6e9e8647bc6a6345ac8ed49e2fc326c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.168
+    second: {fileID: 2100000, guid: fe79ec6575a873e4daf0be9e8b30c716, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.169
+    second: {fileID: 2100000, guid: 79ef57439c6e5494db07e354678e063c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.170
+    second: {fileID: 2100000, guid: 53485fb18ce02f64ca6a97d2c95a443a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.171
+    second: {fileID: 2100000, guid: 400a3b982b7d99d47baf6b4523f747c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.172
+    second: {fileID: 2100000, guid: 9109b1668967e40439378cb9a9d69bb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.173
+    second: {fileID: 2100000, guid: 5e79d9bbd1d8cb046b49aed4e2c24fe6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.174
+    second: {fileID: 2100000, guid: d0ff48819613e584fa5b80ed8d89ac93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.175
+    second: {fileID: 2100000, guid: 1d7bc27a7d36ca042b411409b032f6b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.176
+    second: {fileID: 2100000, guid: 6aaeadbffaec4df4986305b36f022f1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.177
+    second: {fileID: 2100000, guid: a4db18b0552f88f488d999dc9da7e9af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.178
+    second: {fileID: 2100000, guid: 23933a2a3e8549449b6c3e0d4234c881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.179
+    second: {fileID: 2100000, guid: e0791e67a95eafa4d963a4bd326f9436, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.180
+    second: {fileID: 2100000, guid: 54dbb7d139e65ec49a270df3057f1462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.181
+    second: {fileID: 2100000, guid: faad500af2882ad44a1d376a09d63718, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.182
+    second: {fileID: 2100000, guid: 33bbcd4fdf8a12a41ac95978ee650817, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.183
+    second: {fileID: 2100000, guid: 73c07d1ef74bf394eae45d7b7228880b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.184
+    second: {fileID: 2100000, guid: cdcdffe2128fd2d4fa543c547d8d2b85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.185
+    second: {fileID: 2100000, guid: 85ea326e376b5fd41845a5c0ad441b5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.186
+    second: {fileID: 2100000, guid: 64e5d97f69ceae747ba9f1b1149b2d38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.187
+    second: {fileID: 2100000, guid: 2751170979213f44896b6b3c42ac018a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.188
+    second: {fileID: 2100000, guid: 2c9cb37d22d99ce4c936765ba1c2537d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.189
+    second: {fileID: 2100000, guid: 0022ed39b4eab5741a0f3205670a2758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.190
+    second: {fileID: 2100000, guid: b631338018a3ac84ab85f1488a2c44a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.191
+    second: {fileID: 2100000, guid: 0c1a08f443ef398439185902b1375992, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.192
+    second: {fileID: 2100000, guid: de97814984565d84c8d7ea3617ae53e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.193
+    second: {fileID: 2100000, guid: e74a991111f853c46826d1840f3a7ff1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.194
+    second: {fileID: 2100000, guid: 3d888dd3b454d404d90189272a938fa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.195
+    second: {fileID: 2100000, guid: 6978ce2ec515412429dd8ee9a2f87441, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.196
+    second: {fileID: 2100000, guid: fb788f4d2f5b79b46b44d4820be86492, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.197
+    second: {fileID: 2100000, guid: f908e667d0ce7b248825b4c87663e365, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.198
+    second: {fileID: 2100000, guid: 445cb2bd2c4adbf4485d097215b0e819, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.199
+    second: {fileID: 2100000, guid: b73f3a6ae315caf4088c839bc533af0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.200
+    second: {fileID: 2100000, guid: b78ac32b04cbebf4b8a69717474a4e9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.201
+    second: {fileID: 2100000, guid: 4a122a86f6be93a42a7b195539a0c1ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.202
+    second: {fileID: 2100000, guid: 911f82e0c088aa044b12a99e2ba86d14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.203
+    second: {fileID: 2100000, guid: a52207a6b4dd613448d7969c99295e84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.204
+    second: {fileID: 2100000, guid: 0048dfc83bf018a47b3f507acdcc4a78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.205
+    second: {fileID: 2100000, guid: 61ceea48b1b2d7a47980e2944d416377, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.206
+    second: {fileID: 2100000, guid: a7710b7f0a5b94e46b0f15fe46918556, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.207
+    second: {fileID: 2100000, guid: ce819043f04a3e047a07f0305542fd9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.208
+    second: {fileID: 2100000, guid: 46884ddce58092149ab3b88ca42bb4a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.209
+    second: {fileID: 2100000, guid: dd6bf0a5f50ef8848bb070b75600e7ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.210
+    second: {fileID: 2100000, guid: a6278523458da75468e376b033ae092a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.211
+    second: {fileID: 2100000, guid: a631dcd7ab2e43142b3a4e7ce5f41f72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.212
+    second: {fileID: 2100000, guid: f3389c04853364342b628b6baeced603, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.213
+    second: {fileID: 2100000, guid: e8241103fc85d0048932857221e14fe1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.214
+    second: {fileID: 2100000, guid: af8fc9c3c3e1df242a22bbd7d94f9d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.215
+    second: {fileID: 2100000, guid: 519bc864eedd50b4dbc96d9821729ffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.216
+    second: {fileID: 2100000, guid: a434a5ed81988234eb5caf32ba4243ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.217
+    second: {fileID: 2100000, guid: 6836acdb390f1c941a9d6241e01aedec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_material.218
+    second: {fileID: 2100000, guid: f68910e29e33d3c48a7f915bb8caaa45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_militarism2
+    second: {fileID: 2100000, guid: 1ed84da29682ed54a9000fe9fe09abee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals1
+    second: {fileID: 2100000, guid: bfce99c05c0430841a48e8b0845fba9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals3
+    second: {fileID: 2100000, guid: cf2a0e89ede09234faba9e43dc3ed20b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals6
+    second: {fileID: 2100000, guid: b4e7d824d55064146b9a64a01d1c92f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals_3
+    second: {fileID: 2100000, guid: ff135abf1bf07ca43b37f6f88524863b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals_5
+    second: {fileID: 2100000, guid: e611daeacd9fcb544899b646b626315d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals_8
+    second: {fileID: 2100000, guid: ce3bf3ca226826845b7aee5a31bd3191, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals_arasaka_01d2
+    second: {fileID: 2100000, guid: e55d3be774db79147a73d1fcba6be7d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals_fabric3
+    second: {fileID: 2100000, guid: 399d16eaaf9c3734da099864ac69e8f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals_generic_tech
+    second: {fileID: 2100000, guid: 2fbc93f63b8452b47868599ccbd5e3c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decals_tornfabric_yellow
+    second: {fileID: 2100000, guid: 89982e8ec5f97824dbaa4a069f6fc019, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive
+    second: {fileID: 2100000, guid: aceb6693aa86ab1409e6ddb206b541e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive.001
+    second: {fileID: 2100000, guid: 77026c2dea827d64babe48bdf2ad6b07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive.002
+    second: {fileID: 2100000, guid: f328d080cb3ed2a4a95cf8a52e5ea7a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive.005
+    second: {fileID: 2100000, guid: 11b67ce5062c61448b7347858d36c427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive.006
+    second: {fileID: 2100000, guid: 4a393900ff1ad054b867fb03ae7e7212, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive.010
+    second: {fileID: 2100000, guid: e2d857c8c08c732459db02161304b52b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive.011
+    second: {fileID: 2100000, guid: 730d7aabaf6754b488797cd4f70cab31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive.012
+    second: {fileID: 2100000, guid: e9efa3ac9c36102469bad981f5cca763, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive_red
+    second: {fileID: 2100000, guid: 641134b538a623b458369bd18cde1bf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive_red.001
+    second: {fileID: 2100000, guid: d3a0c0929a4a2e44bae7869b1f6ddccc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive_red.002
+    second: {fileID: 2100000, guid: 047a5234e401c23419c1fe67bfbaeaf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive_red.003
+    second: {fileID: 2100000, guid: d7b6eda9c366f044fafd5fb56dcd85ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissive_red.004
+    second: {fileID: 2100000, guid: 4935a95b49d97fe44934debccb63739b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: entropy1
+    second: {fileID: 2100000, guid: 0349c509659a8784cb8c4b690fb642f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_tech7
+    second: {fileID: 2100000, guid: 1f0734614ff0b47409eea2d68a57d085, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: 3446701ccf5968e4587adec1805e6b97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_a
+    second: {fileID: 2100000, guid: fd4a6b8a3df84514db34ce15547f9a70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_b
+    second: {fileID: 2100000, guid: 77c21a223d64a0947999245f3eb5b957, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_big_lens
+    second: {fileID: 2100000, guid: 77224aff188e780429fd76611dbbad40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_big_lens.001
+    second: {fileID: 2100000, guid: 2765ecf3369904048bce008beff51ffd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_big_lens.002
+    second: {fileID: 2100000, guid: dfe7d240c9cdc2e48b7ecf5143a9b6e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_big_lens.003
+    second: {fileID: 2100000, guid: be7aadb2cf578ab4099a61a970446ba6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_big_lens.004
+    second: {fileID: 2100000, guid: 482119e63396fe6489d47e77f6b67122, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: konpeki_glass_dim
+    second: {fileID: 2100000, guid: 9ee83b5cc6cc7d64ba2a7644e9428329, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 4169d70292baa4e45aac461cdbddc6af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: bf898f965db8bc74dbcce159bdc59da1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lights_interactive
+    second: {fileID: 2100000, guid: 7882df39152ce2d41aef4b82b438fcc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_base
+    second: {fileID: 2100000, guid: 729491f2f8a63bf428b49c8b1988dde9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism
+    second: {fileID: 2100000, guid: 592e604920d38334b8289cc58048ce7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism1
+    second: {fileID: 2100000, guid: c89557bc453373844a24f78d653c9c73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_decal
+    second: {fileID: 2100000, guid: 25356f722796a6e4fa679c74838cb697, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01
+    second: {fileID: 2100000, guid: a8b1feacb531ca7409de81e9883bd3ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.001
+    second: {fileID: 2100000, guid: 87c1747a6f68b63469945195e6bef30f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.002
+    second: {fileID: 2100000, guid: 8b8c69387b8d80344abff4ec31aaf07e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.008
+    second: {fileID: 2100000, guid: 5cc98e1765fe5474681e8339da6c0f21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.009
+    second: {fileID: 2100000, guid: 7feaa09692d3e864d8a3cc9651bcad53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.015
+    second: {fileID: 2100000, guid: 67e720b0c4c34bf4fb64f9a4f3568179, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.020
+    second: {fileID: 2100000, guid: f9a07d96f8a9dd64593172d50d34b77a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.021
+    second: {fileID: 2100000, guid: eddbe9afe771cab41b62435e6e84e305, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.027
+    second: {fileID: 2100000, guid: 178688e57e03db84f989c2c7970be3f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.028
+    second: {fileID: 2100000, guid: e2ce48dda654aa541a73c618593406ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.029
+    second: {fileID: 2100000, guid: 2be6053b8f4975f4788aecbca4e46fc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.030
+    second: {fileID: 2100000, guid: 3ded8564b6546c14b9dcd005c13b559b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.031
+    second: {fileID: 2100000, guid: 3e023aae7085b9b4b9cbad43509a407c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.036
+    second: {fileID: 2100000, guid: 018407aa487a63d43ac68389024d524a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.039
+    second: {fileID: 2100000, guid: 602d35cc1a16c714a9e52e8901ee5fc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.042
+    second: {fileID: 2100000, guid: 914a490b8a0402744b21ecb77236c31a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01.045
+    second: {fileID: 2100000, guid: 72218a94c4ec4fc4d9decbdcfb06df3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01_dark
+    second: {fileID: 2100000, guid: 7dddea5fc2f6ad64e9f5dcd959653711, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: militarism_devices_01_dark.001
+    second: {fileID: 2100000, guid: 9b4a76a3d14d67542817e4e0049f1e7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: military_v1
+    second: {fileID: 2100000, guid: 3c41fd151437ebe438fd4d28fa77d5eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_air_pipe_masksset
+    second: {fileID: 2100000, guid: 9f1a9447137306d43b8694b54b6175a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_arasaka_airconditioner_masksset
+    second: {fileID: 2100000, guid: 0983441b285d9f34590027e90b95c120, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_arasaka_tower_interior_lobby_dark_a_masksset
+    second: {fileID: 2100000, guid: 083873d4f79f06b44abf9d9a4d7aa4f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_arasaka_tower_jungle_lockdown_gate_masksset
+    second: {fileID: 2100000, guid: 51fff8a07cb7a2040a7c8fd6bf170019, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_building_a_destroyed_masksset
+    second: {fileID: 2100000, guid: 95310fe6ce4d66a4982a70a8b4379ad6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_cable_set_a_masksset
+    second: {fileID: 2100000, guid: d60ab907412cf3f4dbc3c59ea7d0614f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_catwalk_c_masksset
+    second: {fileID: 2100000, guid: b0421316474b17543a3d16ff4f0354dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_cct_cpz_building_c_masksset
+    second: {fileID: 2100000, guid: 042856a7d75c9974b9d53e0742484db8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_collectible_reading_c_neomilitary_masksset
+    second: {fileID: 2100000, guid: 80919e6f907766d4c98d96d3dc5fc825, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_corpo_security_camera_d__module_masksset
+    second: {fileID: 2100000, guid: 9b62a35d944b1874089b06016bb10059, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_corpo_security_camera_d__wall_mount_masksset
+    second: {fileID: 2100000, guid: 5c13626fd1e361645ad93100d16cdc6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_crane_large_a_masksset
+    second: {fileID: 2100000, guid: 911518de1832dde4db95ec1c916998c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_device_neomilitary_masksset
+    second: {fileID: 2100000, guid: 8cb4bff1930ae264ca82ecb6401821c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_door_devices_entropy_masksset
+    second: {fileID: 2100000, guid: 44ff210d44b60c74eb62e034959a43f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_door_devices_military_masksset
+    second: {fileID: 2100000, guid: 6d68dfae7f92f7c4db162248a980697f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_door_frame_double_a_b_masksset
+    second: {fileID: 2100000, guid: 23c1b881457859f458053ed928063689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_door_sliding_casing_double_a_masksset
+    second: {fileID: 2100000, guid: e22a9eca2c1e63847bce6728ccaa3d13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_door_sliding_n_masksset
+    second: {fileID: 2100000, guid: 1c04c9bd506c44644afd160155c50e32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_elevator_neomilitary_a_hotel_masksset
+    second: {fileID: 2100000, guid: 55423ab4cd19c054884c022bb5912476, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_elevator_neomilitary_a_masksset
+    second: {fileID: 2100000, guid: 4b27bbbc3cb0ddb48a9acdae5904b50b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_ext_arasaka_tower_wall_a_set_a_masksset
+    second: {fileID: 2100000, guid: a9b30fc5e4b8a3b4d97376200ec88e4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_ext_arasaka_tower_wall_a_set_a_masksset.001
+    second: {fileID: 2100000, guid: 1b1e17317ac5a5a46a363f5dbb2107fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_ext_arasaka_tower_wall_a_set_a_masksset.002
+    second: {fileID: 2100000, guid: c628b191f2381734c9a8ac90b9c0711b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_industrial_pipe_structure_a_masksset
+    second: {fileID: 2100000, guid: c7b8f6381a1eaf04787e0600b7c6996f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_common_a_floor_glass_a
+    second: {fileID: 2100000, guid: 16ef27e19135af4479d74201dce3501a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_common_ceiling_tiles_a_black
+    second: {fileID: 2100000, guid: 6fa5b21c81d20444db90ddf83c83df8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_industrial_a_supports_masksset
+    second: {fileID: 2100000, guid: 0ab720f151e191d4aa2d1e4384330e71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_ceiling_a_masksset
+    second: {fileID: 2100000, guid: d97f09ae476bbf941958ee789df5336b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_ceiling_a_masksset.001
+    second: {fileID: 2100000, guid: 9c2a11fd9ea356a438894c6d06495939, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_ceiling_a_masksset.002
+    second: {fileID: 2100000, guid: 45ae84f797d15bb4dba1482c7602a8c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_ceiling_a_masksset.003
+    second: {fileID: 2100000, guid: 3080213e0c11d9843a47ec98e9ce4d93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_ceiling_a_masksset.004
+    second: {fileID: 2100000, guid: 1789daf75609b5a4d8075531a9210210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_ceiling_a_masksset.005
+    second: {fileID: 2100000, guid: 3b35488b7f985324997a23a9749bc805, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_floor_a_masksset
+    second: {fileID: 2100000, guid: 90e5ba914ff749143abbc4b7984c2581, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_floor_mikoshi_white_a_masksset
+    second: {fileID: 2100000, guid: 45af377baa2e84c45b10d3c0b3291b20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset
+    second: {fileID: 2100000, guid: 65233302f2dbbd14e8e2744ed039d2b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.001
+    second: {fileID: 2100000, guid: 1e3e7cf6c439826459154458a0a5d994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.002
+    second: {fileID: 2100000, guid: 60d7bd79ba00b4245a72d0b8933b98ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.003
+    second: {fileID: 2100000, guid: 63067da8df142fd45b595787fe0e24b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.004
+    second: {fileID: 2100000, guid: 0f88311da055e974fad644cbf62b660e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.005
+    second: {fileID: 2100000, guid: 8f2c853e0e07a1744ab5a941311656cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.006
+    second: {fileID: 2100000, guid: 689501f54da3f6541b9499b09d6b7112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.007
+    second: {fileID: 2100000, guid: ba939921acb3cb34d96d86a5b2edaa75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.008
+    second: {fileID: 2100000, guid: f81b732ec620bad4fb026160f4f52832, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.009
+    second: {fileID: 2100000, guid: 8a4d5767c9359c347bf8310191efeb5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.010
+    second: {fileID: 2100000, guid: d7d0a2f0f6f97b84980f231786f2d1a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.011
+    second: {fileID: 2100000, guid: eb8ce872d6579654e979280a848a1e31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.012
+    second: {fileID: 2100000, guid: 7e18974d7b0ce3b40bbd80181085fce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.013
+    second: {fileID: 2100000, guid: f0fb986e83ad582459e922771b7e16c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.014
+    second: {fileID: 2100000, guid: c81e2547454913d4b80a1cef54013af6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.015
+    second: {fileID: 2100000, guid: 8a51e021155d2e24aacace6304d248be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.016
+    second: {fileID: 2100000, guid: 438e7ec3ee807d04d9f5957a69fcf3e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.017
+    second: {fileID: 2100000, guid: f43bc21e84e22f94da3115f686e8491b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.018
+    second: {fileID: 2100000, guid: 86d80bce2b3d2ce408cb0c9817563297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.019
+    second: {fileID: 2100000, guid: ec5fde8f2af6e604b8549dce027b61ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.020
+    second: {fileID: 2100000, guid: 95f0a3ee11caf7e4f8c1392781bfbedc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.021
+    second: {fileID: 2100000, guid: df7b954499513b74e9d9d2bd0161c8fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.022
+    second: {fileID: 2100000, guid: 667a18c9747e404488465c79f993c21a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.023
+    second: {fileID: 2100000, guid: 16daa641522fc8b4b880e3ebf5acdb64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.024
+    second: {fileID: 2100000, guid: b3d281d302b9da24197bdcc40e271f48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.025
+    second: {fileID: 2100000, guid: cebe95c51bb4faa44bc0be80a1bddd85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.026
+    second: {fileID: 2100000, guid: 5b01973b8f4009d40ad1a80f672fc7ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.029
+    second: {fileID: 2100000, guid: db043264aeddf6c4b8ad00f6d40ceb9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.030
+    second: {fileID: 2100000, guid: 0cbdc9eac359d8646a28c4fc6d2593b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.031
+    second: {fileID: 2100000, guid: f8b3a905a2f6f25478838b9b00095866, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.032
+    second: {fileID: 2100000, guid: 51a5f019bed4d8946add13c8b65473ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.033
+    second: {fileID: 2100000, guid: 0b7718551f8d7da4a82cae65caede1d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.034
+    second: {fileID: 2100000, guid: 248c0fe425cb88143a07a4d06fbdf6a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.035
+    second: {fileID: 2100000, guid: 69e2440ceca95264385a064feaee17ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.036
+    second: {fileID: 2100000, guid: 591a6442542639f4f96cb0476c996ccd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.037
+    second: {fileID: 2100000, guid: a11f5f20b80f49e459090ae3ef62ef55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.038
+    second: {fileID: 2100000, guid: feaf93b6b9fbda2419793212c0587e18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.039
+    second: {fileID: 2100000, guid: 1a94765ea4bcebd4da13b022681f538d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.040
+    second: {fileID: 2100000, guid: e03b8910223203248b0f37fb07edef35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.041
+    second: {fileID: 2100000, guid: c695eaf5361a80543aee4e3eeb8f5a46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.042
+    second: {fileID: 2100000, guid: b6bce6946966aa847a01c459b1726ce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_masksset.043
+    second: {fileID: 2100000, guid: 770b6671b824a9a4f920405cd0203c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_jp_arasaka_a_wall_a_masksset
+    second: {fileID: 2100000, guid: 6ef59a44cbd75904794a726632df128d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_office_a_ceiling_masksset
+    second: {fileID: 2100000, guid: 9c35bdcf188745244ab30a44d9792bb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_office_a_corner_masksset
+    second: {fileID: 2100000, guid: ea4dd2e2945024e48a5f53c52f40792d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_office_a_floor_masksset
+    second: {fileID: 2100000, guid: 77cb6d68edea17e478ae8ed5fe53a179, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_int_mlt_office_a_wall_masksset
+    second: {fileID: 2100000, guid: f2f0fabd6bcb5b741aecf80cbb6a2c36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_lootable_ammo_case_small_neomilitary_a_masksset
+    second: {fileID: 2100000, guid: d98e72c738a3dd74a91325318160979c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_maelstrom_factory_garage_rollup_door_frame_a_neomil_a_maskss
+    second: {fileID: 2100000, guid: e840676d958281f449f87cedd8ca5d22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_military_cables_01_masksset
+    second: {fileID: 2100000, guid: 8d9334f2770b825439810d65554efb89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_monitor_device_device_masksset
+    second: {fileID: 2100000, guid: 14c4e58becff35a49be3652de4ad36ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_pier_a_masksset
+    second: {fileID: 2100000, guid: 0ac5800f9dc970349bb0ce6e033e7a4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_q114_tunnel_driller_exterior_shell_masksset
+    second: {fileID: 2100000, guid: 6c5d265ddb3e2824aa9ee79d9bb4da29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_radio_a_neomilitary_masksset
+    second: {fileID: 2100000, guid: 6403dbcf724e14e479058193d27ac144, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_router_masksset
+    second: {fileID: 2100000, guid: eafb85dac6f95a84a9d81339326d0c9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_server_militarism_b_01_masksset
+    second: {fileID: 2100000, guid: 4cc41f34e0fa05a47880fca389c8b719, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_shard_a
+    second: {fileID: 2100000, guid: 31dfd250eecd77b4bb672a5ceeb718bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_std_arr_industrial_a_masksset
+    second: {fileID: 2100000, guid: 0aeef1a4bc2d48147b2db0129087ca35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_tunnel_rock_masksset
+    second: {fileID: 2100000, guid: f11690570d983fb45bc22806271e600c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ml_tunnel_rock_masksset.001
+    second: {fileID: 2100000, guid: b084ab32371ba294e9e78b05f8ce74a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: off
+    second: {fileID: 2100000, guid: 812c0651b17f51148a62b92cfbcb933c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__ml_door_single_sliding_casing_a_masksset
+    second: {fileID: 2100000, guid: bfc3ce66e0b5a9e4b9fb86eb58238292, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__entropy4
+    second: {fileID: 2100000, guid: 6b9c2c758c46e6b47afeb70879436473, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__entropy5
+    second: {fileID: 2100000, guid: b2f41f92b1f344a4fa29f109cc0b2af6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__z_decals_militarism_device
+    second: {fileID: 2100000, guid: 77fb797771950644c87ae771ae20171c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: radio_decals
+    second: {fileID: 2100000, guid: b4c0717de94f22a4099ceb33eb6c8454, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: radio_neomil_decals
+    second: {fileID: 2100000, guid: 0f922c57edccf9247a1a0072b4274d32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red_emissive
+    second: {fileID: 2100000, guid: 2b05264426b344549859cceec17ab8ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rich_airconditioner_a_material_masksset
+    second: {fileID: 2100000, guid: 6717a36f69ab8d2488521b45f7e1b59e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: screen_UI
+    second: {fileID: 2100000, guid: b78384f67c65b7c4e93d3317a572c46d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: screen_UI.001
+    second: {fileID: 2100000, guid: 6d32ab3bb4199cb44af671ed1b827f8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stickers
+    second: {fileID: 2100000, guid: 47a9c3040eb31cd41af4c8e69a8b86ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vfx_decals
+    second: {fileID: 2100000, guid: 03b16534f3744df4286f307d0a025438, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vfx_grid
+    second: {fileID: 2100000, guid: 5e140c2fd0d102445a540e001bed6267, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vfx_light
+    second: {fileID: 2100000, guid: c4c25ce29b2634d45a4d32885cc90f16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: x_decals_entropo_diffuse_device
+    second: {fileID: 2100000, guid: 7b12d9c705579664f945592c5e701bad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: x_screen_ui
+    second: {fileID: 2100000, guid: 8323f800a7edac94f90acc2d3d4bc47a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals
+    second: {fileID: 2100000, guid: 225fd095aa285d0468e12ce0a6834cdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.001
+    second: {fileID: 2100000, guid: 1de626b823967004d9ccb81967b26d10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.002
+    second: {fileID: 2100000, guid: 69fad151762f4aa4cb6446ff82e9fad8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.004
+    second: {fileID: 2100000, guid: 4be22abde387cde45b4996077248ed74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.006
+    second: {fileID: 2100000, guid: a76d9a5227e9d704ba646bb5ef7245cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.009
+    second: {fileID: 2100000, guid: c70b3068c03016243bb25e3506ebf5e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.011
+    second: {fileID: 2100000, guid: 85e0193548c8ac74fb6fdf0ca29a6c55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.013
+    second: {fileID: 2100000, guid: 5e0e2532a8968bc40b9a688b96cd8506, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.016
+    second: {fileID: 2100000, guid: 86b9adb0444f59b4b90d84cbe707c1fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.018
+    second: {fileID: 2100000, guid: a0b4cd179f21e6f479d2477fd41bcc33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.020
+    second: {fileID: 2100000, guid: 4c0d996280c5ef847a777114f6322a4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.022
+    second: {fileID: 2100000, guid: 3825343c7856de44f87e0e5324e25a26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.023
+    second: {fileID: 2100000, guid: be8d83db38760184e8b67ebd8c7400fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.024
+    second: {fileID: 2100000, guid: c5af9588cec7c8d499a6f624288902c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.025
+    second: {fileID: 2100000, guid: fe1eeab7b3428d646aa1006586df9618, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.027
+    second: {fileID: 2100000, guid: ec0a962f440d4ce4ebb0ca31fe54d3fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.028
+    second: {fileID: 2100000, guid: 2eebecc962ea98f4b898fc116d192559, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.029
+    second: {fileID: 2100000, guid: 4732e5dcc7c7cc94b83d0411d819c6c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.030
+    second: {fileID: 2100000, guid: 5fe307c2c8917d5448fd4686d10a1852, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.031
+    second: {fileID: 2100000, guid: 13dfc8c69e426df42ab4e7b53a2dca37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.032
+    second: {fileID: 2100000, guid: 5d841237bd8464e4c8e149dd6fd29cd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.034
+    second: {fileID: 2100000, guid: c5171904d41ecd141b0a1df94a5d28b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.037
+    second: {fileID: 2100000, guid: 5178eb462cf27bc49939de40470de717, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.039
+    second: {fileID: 2100000, guid: 788c821401440804aa22ed59e85d10fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.042
+    second: {fileID: 2100000, guid: 7b28812f89cccab478d54504348b33b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.043
+    second: {fileID: 2100000, guid: b3e3b4b78312bb64e9983b4588862c18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.044
+    second: {fileID: 2100000, guid: 68a9511115c22be4bb01e2463f6f2970, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.046
+    second: {fileID: 2100000, guid: 7355a2a94ad1ae54e8ab906ef56e9cf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.047
+    second: {fileID: 2100000, guid: f4d3468da4c2bd947a24b8abc3591300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.050
+    second: {fileID: 2100000, guid: 8bbba8694bd5c3f4b927d9d06c2cfe60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.051
+    second: {fileID: 2100000, guid: 5d5fd84a727d87241a4b60920d017e27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.052
+    second: {fileID: 2100000, guid: 156c58b6f4b52c340b07d4b5c8837b0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.055
+    second: {fileID: 2100000, guid: 29ff56f916858774f97fbd4a1a6d6828, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.056
+    second: {fileID: 2100000, guid: 98fde6442001da44e9225f43f6270cb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.058
+    second: {fileID: 2100000, guid: 1cce865b29d9bf84b8866f532cfc43b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.061
+    second: {fileID: 2100000, guid: cb54f75f986656a488ecc8d2c21c5773, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.064
+    second: {fileID: 2100000, guid: 1b31a3ce8a9714c4b9d22a3c149b5e14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.065
+    second: {fileID: 2100000, guid: 097c3f6cd97848c45bf8d088133e9433, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.068
+    second: {fileID: 2100000, guid: c4d08aea1d334a2449dcf6a6f06b7982, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.070
+    second: {fileID: 2100000, guid: 94ac5d50f32a082459a5e64f7e53eb46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.071
+    second: {fileID: 2100000, guid: 3b3b224eb5a1eb24daeabe148ac15720, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.074
+    second: {fileID: 2100000, guid: 82bb1361932ebab47bb815db30353197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.077
+    second: {fileID: 2100000, guid: 0ccbd6f1dcfd59841aa47282e4687aed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.078
+    second: {fileID: 2100000, guid: f907b7f95b74c6049b503b26b2fff431, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.081
+    second: {fileID: 2100000, guid: 8756456b00bdbe74bb9805c6aca0c247, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.083
+    second: {fileID: 2100000, guid: 5b7904f341d680c43a02bbeedab268c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.084
+    second: {fileID: 2100000, guid: fb05089be460f5241b850971996fceba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.085
+    second: {fileID: 2100000, guid: 7b14fc6b93aaf1d4f8763890c0312e24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.088
+    second: {fileID: 2100000, guid: c5a07b7f56c70944fab6d537bf718685, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals.090
+    second: {fileID: 2100000, guid: 808d68429e19cbd45ae43a39f7d36022, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark
+    second: {fileID: 2100000, guid: b24d40552157d7d4c823dceff3a52223, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.001
+    second: {fileID: 2100000, guid: 216520ff9132f104b97c04e3fd90d338, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.002
+    second: {fileID: 2100000, guid: ee726359a8e98a64d8741e568ac7212a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.003
+    second: {fileID: 2100000, guid: ac4ff47198aaf61489197b95b358143a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.004
+    second: {fileID: 2100000, guid: 67e1d2dbd195caf47a28cb95ad3e2edd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.005
+    second: {fileID: 2100000, guid: 0c3ab5472bd818d4494324476b853ccd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.006
+    second: {fileID: 2100000, guid: 1bf6dda3de0c6d044a78b2d972c7132b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.008
+    second: {fileID: 2100000, guid: c9cedbc624d9cea419c8e2d3d152d7a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.009
+    second: {fileID: 2100000, guid: 4631015248caadf4085469f4880a6132, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.010
+    second: {fileID: 2100000, guid: 093575ef3165d2a4188b8377e4293858, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.011
+    second: {fileID: 2100000, guid: ca66fe106bb31544d83c6c0bfea3d847, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.012
+    second: {fileID: 2100000, guid: bf9e7163f008cf74086aeac4fac34de6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.013
+    second: {fileID: 2100000, guid: 78a8c006d904d404fac80d98168eecc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.014
+    second: {fileID: 2100000, guid: dd17583050617fe4fb5a779e7943d8c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.015
+    second: {fileID: 2100000, guid: 5ac83133c62d17244b63236ad7ff96d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.016
+    second: {fileID: 2100000, guid: 2086e178c3d4e26469d118335365126b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.019
+    second: {fileID: 2100000, guid: dacea858797d1f348b79025451adb42c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.020
+    second: {fileID: 2100000, guid: 3b4bb59b91b0a8b42b6b55e160498021, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.021
+    second: {fileID: 2100000, guid: 343744f7c6f9c164cadbe83dffba45c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.022
+    second: {fileID: 2100000, guid: d3652aa3d3e48184ba87dd0845bb92bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_decals_dark.023
+    second: {fileID: 2100000, guid: 3f330dafa60596545b61dbcc7aee774b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_emissive
+    second: {fileID: 2100000, guid: a39cac54e148ef745b7a83aad7c4bf9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_glass
+    second: {fileID: 2100000, guid: 049cf1f2b0530aa44a549deaceb2284f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_glow_03
+    second: {fileID: 2100000, guid: 4f1d7d4faa18e4d42a2c63424efcd00c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_grate_05
+    second: {fileID: 2100000, guid: baa41205691e621429201301aac1b48f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xx_stickers
+    second: {fileID: 2100000, guid: 7276d9fe07369eb4da38d6a2c77b6b6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decal
+    second: {fileID: 2100000, guid: 2dd4aad039db56b4f9218e2cbe4a5542, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decal_yellow_off
+    second: {fileID: 2100000, guid: 53b1b8ad41c45c54cad3ee2e9ea78351, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decals_entropy_additive
+    second: {fileID: 2100000, guid: 37ee9e22ae4585d4a81b49d169f7ed83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decals_entropy_devices_01
+    second: {fileID: 2100000, guid: 464fef26f34fbb9429e46cddecab6552, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decals_entropy_devices_02
+    second: {fileID: 2100000, guid: 1115cfeb5aeeae54b95558d5d3e9371f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decals_entropy_opaque
+    second: {fileID: 2100000, guid: d8091341d901e1e44bc92e7e2a75bd93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decals_militarism_device
+    second: {fileID: 2100000, guid: e81fff152682fdb4ab021c9712778710, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_decals_neomilitarism
+    second: {fileID: 2100000, guid: e9ba05bb64f7bcf49a39d8c258603b44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_emissive_ceiling_light
+    second: {fileID: 2100000, guid: 48c217946e4509848988172c5d71ca6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_glass_decorative_dark
+    second: {fileID: 2100000, guid: 04e7b81d3ee309348828ceb2bdd67ca2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_militarism_devices_01
+    second: {fileID: 2100000, guid: ef9868ae69a8acb458c2cb767c132297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_scanner
+    second: {fileID: 2100000, guid: 3ae975bb53ce1e54a955172e2fed6e69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_screen_UI
+    second: {fileID: 2100000, guid: e46a75cec8cc0114cad89bc22e42ab76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: z_stickers
+    second: {fileID: 2100000, guid: 6738fc90c36032e479eeb63e7b1c1827, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
