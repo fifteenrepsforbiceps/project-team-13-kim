@@ -44,6 +44,7 @@ namespace JUTPS.CharacterBrain
         [HideInInspector] public float VelocityMultiplier;
         protected float VerticalY;
         protected float HorizontalX;
+        private Vector3 storedLandingVelocity; // 착지 시 속도를 저장하는 변수
         [HideInInspector] public Transform DirectionTransform;
 
         //ROTATION VARIABLES
@@ -252,6 +253,7 @@ namespace JUTPS.CharacterBrain
         public bool CanJump;
         public bool IsJumping;
         public bool IsGrounded = true;
+        public bool wasGrounded = false; 
         public bool IsSliding;
         public bool IsMeleeAttacking;
         public bool IsPunching;
@@ -753,10 +755,11 @@ namespace JUTPS.CharacterBrain
         }
         public void InAirMovementControl(bool JumpInert = true)
         {
-            if (anim.GetCurrentAnimatorStateInfo(0).IsName("EndJump"))
-            {
-                VelocityMultiplier = Mathf.Lerp(VelocityMultiplier, 0, Time.deltaTime);
-            }
+            // if (anim.GetCurrentAnimatorStateInfo(0).IsName("EndJump"))
+            // {
+            //     IsRunning = false;
+            //     VelocityMultiplier = Mathf.Lerp(VelocityMultiplier, 0, Time.deltaTime);
+            // }
 
             if (IsGrounded)
             {
@@ -774,7 +777,7 @@ namespace JUTPS.CharacterBrain
                 if (IsMoving)
                 {
                     transform.Translate(DirectionTransform.forward * AirInfluenceControll / 2 * Time.deltaTime, Space.World);
-                    VelocityMultiplier = Mathf.Lerp(VelocityMultiplier, 0, Time.deltaTime);
+                    VelocityMultiplier = Mathf.Lerp(VelocityMultiplier, 0, 0.2f*Time.deltaTime);
                     IsSprinting = false;
                     IsRunning = false;
                 }
@@ -1026,9 +1029,15 @@ namespace JUTPS.CharacterBrain
             if (IsDriving == false)
             {
                 Collider[] groundcheck = Physics.OverlapBox(transform.position + transform.up * GroundCheckHeighOfsset, new Vector3(GroundCheckRadius, GroundCheckSize, GroundCheckRadius), transform.rotation, WhatIsGround);
+
                 if (groundcheck.Length != 0 && IsJumping == false)
                 {
-                    IsGrounded = true;
+                    if (!IsGrounded)  // 이전에 공중에 있다가 착지한 경우
+                    {
+                        anim.SetTrigger("Landing"); // 착지 트리거
+                    }
+                    
+                    IsGrounded = true; // 착지 상태로 설정
                 }
                 else if (IsGrounded == true)
                 {
@@ -2536,6 +2545,7 @@ namespace JUTPS.CharacterBrain
         public string MovingTurn = "MovingTurn";
         public string Grounded = "Grounded";
         public string Jumping = "Jumping";
+        public string Landing = "Landing";
         public string ItemEquiped = "ItemEquiped";
         public string FireMode = "FireMode";
         public string Crouch = "Crouched";

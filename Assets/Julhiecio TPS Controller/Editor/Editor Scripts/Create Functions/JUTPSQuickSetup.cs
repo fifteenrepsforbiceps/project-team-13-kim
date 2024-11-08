@@ -304,7 +304,7 @@ namespace JUTPSEditor
         }
 
 
-        public static void SetupCharacterController(GameObject CharacterGameObject, float moveSpeed = 3, float rotationSpeed = 3, float stoppingSpeed = 1f, bool curvedMovement = true, bool lerpRotation = true, bool useRootMotion = false, bool addFootplacer = true, bool addFootstep = true, bool addDrivingAnimation = false, bool addBodyLean = false, bool addRagdoller = false, bool addInventory = true, bool blockDefaultInputs = false, string animatorControllerPath = "Assets/Julhiecio TPS Controller/Animations/Animator/AnimatorTPS Controller.controller")
+        public static void SetupCharacterController(GameObject CharacterGameObject, float moveSpeed = 3, float rotationSpeed = 3, float stoppingSpeed = 1f, bool curvedMovement = true, bool lerpRotation = true, bool useRootMotion = false, bool addFootplacer = true, bool addFootstep = true, bool addDrivingAnimation = false, bool addBodyLean = false, bool addRagdoller = false, bool addInventory = true, bool blockDefaultInputs = false, string animatorControllerPath = "Assets/Julhiecio TPS Controller/Animations/Animator/.controller")
         {
             if (CharacterGameObject.GetComponent<JUCharacterController>() != null)
             {

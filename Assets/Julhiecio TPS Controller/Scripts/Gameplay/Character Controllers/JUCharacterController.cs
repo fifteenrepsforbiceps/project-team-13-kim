@@ -55,6 +55,7 @@ namespace JUTPS
 
         void Update()
         {
+            // Debug.Log($"Velocity - X: {rb.velocity.x}, Y: {rb.velocity.y}, Z: {rb.velocity.z}");
 
             // Debug.Log("CurrentSprintSpeedIntensity: " + CurrentSprintSpeedIntensity);
             // Debug.Log("VelocityMultiplier: " + VelocityMultiplier);
@@ -189,20 +190,25 @@ namespace JUTPS
                 if (!IsGrounded) { return; }
 
                 // Force Sprinting 위에 WalkOnRunButton 켜져 있건 말건 SprintOnRunButton 켜져 있으면 달리기 가능 
-                // Prone State 달리기 방지
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("Crouch Locomotion BlendTree") ||
                     anim.GetCurrentAnimatorStateInfo(0).IsName("CrouchToProne") ||
                     anim.GetCurrentAnimatorStateInfo(0).IsName("Prone Free Locomotion BlendTree") ||
                     anim.GetCurrentAnimatorStateInfo(0).IsName("Prone FireMode BlendTree") ||
-                    anim.GetCurrentAnimatorStateInfo(0).IsName("Prone To Crouch") || 
-                    anim.GetCurrentAnimatorStateInfo(0).IsName("EndJump")
+                    anim.GetCurrentAnimatorStateInfo(0).IsName("Prone To Crouch")
                     ) 
                 {
                     // IsRunning = true;
                     IsSprinting = false;
                 }
-                else if (FiringMode == false && IsCrouched == false && IsProne == false && CanSprint && (Mathf.Abs(HorizontalX) > 0.5f || Mathf.Abs(VerticalY) > 0.5f))
+                else if(anim.GetCurrentAnimatorStateInfo(0).IsName("EndJump")||
+                        anim.GetCurrentAnimatorStateInfo(0).IsName("Jumping")||
+                        anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
                 {
+                    IsRunning = false;
+                    IsSprinting = false;
+                }
+                else if (FiringMode == false && IsCrouched == false && IsProne == false && CanSprint && (Mathf.Abs(HorizontalX) > 0.5f || Mathf.Abs(VerticalY) > 0.5f))
+                {             
                     IsRunning = true;
                     IsSprinting = true;
                     CanSprint = true;
@@ -224,25 +230,6 @@ namespace JUTPS
                 if (Mathf.Abs(HorizontalX) > 0.5f || Mathf.Abs(VerticalY) > 0.5f)
                 {
                     IsRunning = true;
-                }
-            }
-
-            //Mobile Run Button Auto-Run
-            if (JUGameManager.IsMobileControls && BlockVerticalInput == false)
-            {
-                if (JUInput.GetButton(JUInput.Buttons.SprintButton) && JUInput.GetAxis(JUInput.Axis.MoveHorizontal) == 0 && JUInput.GetAxis(JUInput.Axis.MoveVertical) == 0)
-                {
-                    if (SprintOnRunButton)
-                    {
-                        IsSprinting = true;
-                        if (UnlimitedSprintDuration) ReachedMaxSprintSpeed = false;
-                    }
-
-                    IsRunning = true;
-                    IsCrouched = false;
-                    IsMoving = true;
-                    VerticalY = Mathf.Lerp(VerticalY, 1f, 8 * Time.deltaTime);
-
                 }
             }
 
